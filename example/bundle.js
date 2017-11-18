@@ -477,9 +477,8 @@ var App = React.createClass({displayName: "App",
     return React.createElement("div", null, 
       React.createElement("div", {className: "panel panel-default"}, 
         React.createElement("div", {className: "panel-heading"}, title + " Menu"), 
-          React.createElement("div", {className: "panel-body"}, 
-            React.createElement("div", {className: "panel-body-inner"}, 
-              treeMenuNode
+          React.createElement("div", {className: "panel-body"},
+            treeMenuNode
         )
       )
     )
