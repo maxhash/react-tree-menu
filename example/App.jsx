@@ -478,8 +478,10 @@ var App = React.createClass({
     return <div>
       <div className="panel panel-default">
         <div className="panel-heading">{title + " Menu"}</div>
-        <div className="panel-body">
-          {treeMenuNode}
+        <div className="panel-body-cont">
+          <div className="panel-body">
+            {treeMenuNode}
+          </div>
         </div>
       </div>
     </div>;
@@ -490,15 +492,15 @@ var App = React.createClass({
     this._setLastActionState(propName, "2", lineage);
 
     var nodeId = lineage.pop();
-    
+
     var treeState = this.state.staticTreeData;
-    
+
     treeState[nodeId][propName] = !treeState[nodeId][propName];
-    
+
     this.setState({
       staticTreeData : treeState
     });
-    
+
   },
 
   _handleDynamicTreeNodePropChange: function (propName, lineage) {
