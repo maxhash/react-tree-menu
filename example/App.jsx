@@ -479,9 +479,7 @@ var App = React.createClass({
       <div className="panel panel-default">
         <div className="panel-heading">{title + " Menu"}</div>
           <div className="panel-body">
-            <div className="panel-body-inner">
-              {treeMenuNode}
-            </div>  
+             {treeMenuNode}
           </div>
       </div>
     </div>;
