@@ -478,11 +478,11 @@ var App = React.createClass({
     return <div>
       <div className="panel panel-default">
         <div className="panel-heading">{title + " Menu"}</div>
-        <div className="panel-body-cont">
           <div className="panel-body">
-            {treeMenuNode}
+            <div className="panel-body-inner">
+              {treeMenuNode}
+            </div>  
           </div>
-        </div>
       </div>
     </div>;
   },
